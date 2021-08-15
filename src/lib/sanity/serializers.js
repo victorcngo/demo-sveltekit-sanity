@@ -1,5 +1,4 @@
 import { urlFor } from '.';
-import Facts from '../components/Facts.svelte';
 import Image from '../components/Image.svelte';
 
 export default {
@@ -12,12 +11,6 @@ export default {
 					alt: node.alt,
 					src: urlFor(node).width(400).auto('format').url()
 				}
-			};
-		},
-		facts: ({ children }) => {
-			return {
-				component: Facts,
-				childNodes: children
 			};
 		}
 	}

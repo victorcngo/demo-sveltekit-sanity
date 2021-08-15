@@ -7,7 +7,6 @@ export async function get({ params }) {
         *[slug.current==$slug][0]{
             body,
             "category": categories[0],
-            facts,
             "image": mainImage.asset->url,
             publishedAt,
             "related": *[categories[0]._ref == ^.categories[0]._ref && slug.current != $slug]{
