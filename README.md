@@ -20,4 +20,10 @@ To secure your data, all connections to Sanity are saved in environment variable
 
 ## Note
 
-Since [@movingbrands/svelte-portable-text](https://github.com/movingbrands/svelte-portable-text) seems to be no longer under development it uses a fork: [@camilleri13/svelte-portable-text](https://github.com/jcamilleri13/svelte-portable-text)
+This codes uses [@movingbrands/svelte-portable-text](https://github.com/movingbrands/svelte-portable-text), which seems to be completely dead and has some severe issues to get to work with SvelteKit due to CommonJS and other stuff I am not qualified to explain. It is important to add the following experimental flag to node while trying to build:
+
+```
+NODE_OPTIONS = "--experimental-modules --experimental-specifier-resolution=node"
+```
+
+This can be done in the `.env` file or anyhow you want to do this.

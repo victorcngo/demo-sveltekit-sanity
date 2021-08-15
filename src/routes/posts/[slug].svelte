@@ -64,7 +64,6 @@
 	h1 {
 		font-size: 2em;
 		text-align: center;
-		text-shadow: 2px 2px black, -2px -2px black, -2px 2px black, 2px -2px black;
 	}
 	div > :global(* + *) {
 		margin-top: 1em;
