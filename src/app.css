@@ -1,0 +1,38 @@
+:root {
+	--blue--100: #091d36;
+	--blue--200: #0b4c84;
+	--blue--300: #598ec2;
+	--blue--400: #9bc1ee;
+	--gray: #f0eff5;
+	--page-width: 1024px;
+}
+
+* {
+	box-sizing: border-box;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: 1.5;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html {
+	background-color: var(--gray);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+a {
+	color: var(--blue--200);
+}
