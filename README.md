@@ -5,6 +5,8 @@ This is a starter-kit / demo for using SvelteKit and Sanity.
 It includes a basic setup to get posts, lists posts and show posts.
 It also demonstrates how to display some extra information (the 'Facts' block) to your posts and how to fetch related posts.
 
+This demo uses the default 'blog' setup for Sanity Studio.
+
 Additional steps would include limiting the number of posts fetched and a search function, these can be easily added by anyone familiar with Sanity's querying language.
 
 ## Setting up

@@ -15,11 +15,9 @@
 <script>
 	import BlockContent from '@movingbrands/svelte-portable-text';
 	import serializers from '$lib/sanity/serializers';
-	import Facts from '$lib/components/Facts.svelte';
 	import LinkList from '$lib/components/LinkList.svelte';
 
 	export let body;
-	export let facts;
 	export let image;
 	export let related;
 	export let title;
@@ -32,9 +30,6 @@
 <div class="hero" style="background-image: url({image});" />
 <h1>{title}</h1>
 <div class="wrapper">
-	{#if facts}
-		<Facts {facts} />
-	{/if}
 	<BlockContent blocks={body} {serializers} />
 	<h2>Related Content</h2>
 	<LinkList links={related} />
