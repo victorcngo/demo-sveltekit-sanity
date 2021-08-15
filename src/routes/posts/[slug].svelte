@@ -29,10 +29,8 @@
 	<title>{title}</title>
 </svelte:head>
 
-<div class="hero" style="background-image: url({image});">
-	<h1>{title}</h1>
-</div>
-
+<div class="hero" style="background-image: url({image});" />
+<h1>{title}</h1>
 <div class="wrapper">
 	{#if facts}
 		<Facts {facts} />
@@ -48,7 +46,6 @@
 		background-color: var(--blue--200);
 		background-position: 50% 50%;
 		background-size: cover;
-		color: white;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;

@@ -5,7 +5,6 @@ import Image from '../components/Image.svelte';
 export default {
 	types: {
 		image: ({ node, children }) => {
-      console.log(node)
 			return {
         childNodes: children,
 				component: Image,
