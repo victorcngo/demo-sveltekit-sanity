@@ -4,6 +4,9 @@
 		Built with <a href="https://kit.svelte.dev">SvelteKit</a> and
 		<a href="https://www.sanity.io">Sanity</a>.
 	</span>
+	<a href="https://github.com/stephane-vanraes/demo-sveltekit-sanity/" target="_blank"
+		>Copy me from Github</a
+	>
 </footer>
 
 <style>
