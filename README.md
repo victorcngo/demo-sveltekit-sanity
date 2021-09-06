@@ -15,17 +15,14 @@ Additional steps would include limiting the number of posts fetched and a search
 
 To secure your data, all connections to Sanity are saved in environment variables, during development you can use a `.env` for this. You need the following variables setup:
 
-| Name | Description |
-| ---- | ----------- |
+| Name                  | Description  |
+| --------------------- | ------------ |
+| VITE_SANITY_DATASET   | the dataset  |
+| VITE_SANITY_PROJECTID | a project id |
+| VITE_SANITY_TOKEN     | a token      |
 
 (Note: this file should never be commited)
 
 ## Note
 
-This codes uses [@movingbrands/svelte-portable-text](https://github.com/movingbrands/svelte-portable-text), which seems to be completely dead and has some severe issues to get to work with SvelteKit due to CommonJS and other stuff I am not qualified to explain. It is important to add the following experimental flag to node while trying to build:
-
-```
-NODE_OPTIONS = "--experimental-modules --experimental-specifier-resolution=node"
-```
-
-This can be done in the `.env` file or anyhow you want to do this.
+This codes uses an experimental home-brew to transform sanity portable text into html, while it works with simple things, it's not yet tested with more complicated constructs.
