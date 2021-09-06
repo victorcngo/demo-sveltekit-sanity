@@ -13,9 +13,9 @@
 </script>
 
 <script>
-	import BlockContent from '@movingbrands/svelte-portable-text';
 	import serializers from '$lib/sanity/serializers';
 	import LinkList from '$lib/components/LinkList.svelte';
+	import ContentBlocks from '$lib/sanity/ContentBlocks.svelte';
 
 	export let body;
 	export let image;
@@ -30,7 +30,7 @@
 <div class="hero" style="background-image: url({image});" />
 <h1>{title}</h1>
 <div class="wrapper">
-	<BlockContent blocks={body} {serializers} />
+	<ContentBlocks blocks={body} {serializers} />
 	<h2>Related Content</h2>
 	<LinkList links={related} />
 </div>

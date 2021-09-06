@@ -4,8 +4,9 @@ import Image from '../components/Image.svelte';
 export default {
 	types: {
 		image: ({ node, children }) => {
+			console.log(node)
 			return {
-        childNodes: children,
+				childNodes: children,
 				component: Image,
 				props: {
 					alt: node.alt,
