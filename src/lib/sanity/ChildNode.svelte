@@ -2,7 +2,6 @@
 	import defaultBlocks from './defaultBlocks';
 	import SerializedNode from './SerializedNode.svelte';
 
-	export let children = [];
 	export let _key = '';
 	export let _type = '';
 	export let marks = [];

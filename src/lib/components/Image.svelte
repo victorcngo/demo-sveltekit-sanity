@@ -1,8 +1,6 @@
 <script>
 	export let alt;
 	export let src;
-
-	$: console.log(src);
 </script>
 
 <img {src} {alt} />

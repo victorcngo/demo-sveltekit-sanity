@@ -4,12 +4,7 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	kit: {
 		adapter: adapter(),
-		target: 'body',
-		vite: {
-			optimizeDeps: {
-				exclude: ['@sanity/block-content-to-hyperscript/internals.js']
-			}
-		}
+		target: 'body'
 	}
 };
 
