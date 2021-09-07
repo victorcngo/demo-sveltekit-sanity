@@ -15,7 +15,7 @@
 <script>
 	import serializers from '$lib/sanity/serializers';
 	import LinkList from '$lib/components/LinkList.svelte';
-	import ContentBlocks from '$lib/svelte-portable-text/ContentBlocks.svelte';
+	import ContentBlocks from '@arzidava/svelte-portable-text';
 
 	export let body;
 	export let image;
