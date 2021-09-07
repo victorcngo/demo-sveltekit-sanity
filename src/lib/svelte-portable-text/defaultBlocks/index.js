@@ -12,6 +12,7 @@ import code from './code.svelte';
 import a from './a.svelte';
 import span from './span.svelte';
 import normal from './normal.svelte';
+import link from './link.svelte';
 
 //
 import ul from './ul.svelte';
@@ -30,7 +31,7 @@ import br from './br.svelte';
 import figure from './figure.svelte';
 import img from './img.svelte';
 
-export const Components = {
+const blocks = {
 	h1,
 	h2,
 	h3,
@@ -42,6 +43,7 @@ export const Components = {
 	a,
 	span,
 	normal,
+	link,
 	ul,
 	ol,
 	li,
@@ -55,5 +57,12 @@ export const Components = {
 	img
 };
 
-export default (component) =>
-	typeof Components[component] !== 'undefined' ? Components[component] : false;
+const components = Object.keys(blocks).reduce((result, key) => ({
+	...result,
+	[key]: () => ({
+		component: blocks[key],
+		props: () => {}
+	})
+}), {})
+
+export default components
